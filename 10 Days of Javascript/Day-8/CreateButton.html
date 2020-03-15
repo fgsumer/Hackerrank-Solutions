@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button</title>
+
+    <style>
+      #btn {
+        width: 96px;
+        height: 48px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      let createButton = document.createElement('button');
+      createButton.id = 'btn';
+      createButton.innerHTML = '0';
+      document.body.appendChild(createButton);
+
+      var btn = document.getElementById('btn');
+      btn.addEventListener('click', function() {
+        return btn.innerHTML++;
+      });
+    </script>
+  </body>
+</html>
